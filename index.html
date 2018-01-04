@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>新世界</title>
+    <link rel="stylesheet" type="text/css" href="./style/index.css">
+    <script type="text/javascript" src="src/signup.js"></script>
+</head>
+<body>
+<div class="container">
+    <header>
+        <div class="logo"></div>
+        <div class="logo-p">新世界</div>
+        <nav>
+            <li class="sign-in">
+                <a href="pages/signup.html">
+                    <div class="sign-in-logo"></div>
+                    <div class="sign-in-p">登录</div>
+                </a>
+            </li>
+            <li><a href="index.html">关于我们</a></li>
+            <li><a href="index.html">爱心社区</a></li>
+            <li><a href="index.html">项目介绍</a></li>
+            <li><a href="index.html">最新活动</a></li>
+            <li class="index"><a href="index.html">首页</a></li>
+        </nav>
+    </header>
+    <main>
+        <div class="start">
+            <h1>Time of new life</h1>
+            <p>新时代，年轻的人们让我们一起<br>体验新生活，享受新生活</p>
+            <a href="pages/enjoy.html">
+                <label for="input"><input id="input" type="button" class="start_btn" value="开始体验"></label>
+            </a>
+        </div>
+        <div class="item">
+            <section class="item1">
+                <img src="img/item1.png">
+                <p>打造全新世界观，让你更<br>爱你的生活</p>
+            </section>
+            <section class="item2">
+                <img src="img/item2.png">
+                <p>丰富多彩的公益活动，发<br>挥新世界的主人公意识</p>
+            </section>
+            <section class="item3">
+                <img src="img/item3.png">
+                <p>时尚的新理念，超前体验<br>未知的生活</p>
+            </section>
+            <section class="item4">
+                <img src="img/item4.png">
+                <p>完善的培养机制，培养你<br>全新的世界观</p>
+            </section>
+        </div>
+        <div class="row">
+            <img src="img/biglogo.png">
+            <p>关于新世界，你不知道的还有什么？</p>
+        </div>
+        <div class="search">
+            <h2>查找新世界<span>城</span>市活动信息</h2>
+            <p>每个城市的不同活动信息，请自主查询您所需要了解的城市</p>
+            <form>
+                <select name="国家" id="country">
+                    <option value="中国" selected="selected">中国</option>
+                    <option value="美国">美国</option>
+                    <option value="英国">英国</option>
+                </select>
+                <select name="省份" id="province">
+                    <option>河北省</option>
+                    <option>河南省</option>
+                    <option>北京市</option>
+                </select>
+                <select name="市" id="city">
+                    <option>石家庄市</option>
+                    <option>唐山市</option>
+                    <option>邯郸市</option>
+                    <option>邢台市</option>
+                    <option>保定市</option>
+                    <option>秦皇岛</option>
+                    <option>张家口市</option>
+                </select>
+                <input type="button" value="搜索"></input>
+            </form>
+            <div id="demo"> 
+                <div id="indemo"> 
+                    <div id="demo1"> 
+                    <a href="#"><img src="img/beijing.png" border="0" /></a> 
+                    <a href="#"><img src="img/shenzhen.png" border="0" /></a> 
+                    <a href="#"><img src="img/shanghai.png" border="0" /></a> 
+                    <a href="#"><img src="img/xianggang.png" border="0" /></a> 
+                    </div> 
+                    <div id="demo2"></div> 
+                </div> 
+            </div>
+    <div id="footer">
+        <br/><br/>为你们提供更多新世界城市信息<a href="#" >最新活动</a>，<a href="#">项目介绍</a>，<a href="#">爱心社区</a>。<br/>Copyright©2013-2014 Hebshufajia.com,All Rights Reserved</p><p align="center">冀ICP备05067795号 冀公网安备110402440008号</p>
+</div>
+</body>
+<script> 
+    var speed=10; 
+    var tab=document.getElementById("demo"); 
+    var tab1=document.getElementById("demo1"); 
+    var tab2=document.getElementById("demo2"); 
+    tab2.innerHTML=tab1.innerHTML; 
+    function Marquee(){ 
+        if(tab2.offsetWidth-tab.scrollLeft<=0) 
+        tab.scrollLeft-=tab1.offsetWidth 
+        else{ 
+        tab.scrollLeft++; 
+        } 
+    } 
+    var MyMar=setInterval(Marquee,speed); 
+    tab.onmouseover=function() {clearInterval(MyMar)}; 
+    tab.onmouseout=function() {MyMar=setInterval(Marquee,speed)}; 
+</script> 
+</html>
