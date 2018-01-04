@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <title>新世界</title>
     <link rel="stylesheet" type="text/css" href="./style/index.css">
-    <script type="text/javascript" src="src/signup.js"></script>
 </head>
 <body>
 <div class="container">
@@ -95,21 +94,5 @@
         <br/><br/>为你们提供更多新世界城市信息<a href="#" >最新活动</a>，<a href="#">项目介绍</a>，<a href="#">爱心社区</a>。<br/>Copyright©2013-2014 Hebshufajia.com,All Rights Reserved</p><p align="center">冀ICP备05067795号 冀公网安备110402440008号</p>
 </div>
 </body>
-<script> 
-    var speed=10; 
-    var tab=document.getElementById("demo"); 
-    var tab1=document.getElementById("demo1"); 
-    var tab2=document.getElementById("demo2"); 
-    tab2.innerHTML=tab1.innerHTML; 
-    function Marquee(){ 
-        if(tab2.offsetWidth-tab.scrollLeft<=0) 
-        tab.scrollLeft-=tab1.offsetWidth 
-        else{ 
-        tab.scrollLeft++; 
-        } 
-    } 
-    var MyMar=setInterval(Marquee,speed); 
-    tab.onmouseover=function() {clearInterval(MyMar)}; 
-    tab.onmouseout=function() {MyMar=setInterval(Marquee,speed)}; 
-</script> 
+<script src="src/lunbo.js"></script>
 </html>
